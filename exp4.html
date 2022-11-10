@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <style>
+.menu-bar{
+background: hsl(0, 83%, 39%);
+text-align: center;
+}
+.menu-bar ul{ display:
+inline-flex; list-style:
+none;
+color: rgb(255, 255, 255);
+}
+.menu-bar li { width:
+130px; margin:
+10px; padding: 5px;
+}
+.menu-bar ul li a
+{ text-decoration: none;
+color:rgb(255, 255, 255)
+}
+.active,.menu-bar ul li:hover
+{
+background: hsl(0, 1%, 52%); border-radius:4px;
+}
+20CS2056L – Web Technology Lab URK20CS2103
+Ex. No. 4 Responsive Web Design using Bootstrap UI Framework
+08/08/2022
+</style>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+
+<meta name="viewport"content="width=device-width, initial-scale=1">
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"rel="stylesheet"> <script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> </head>
+<body>
+<header>
+<div class="menu-bar" style="padding:25px;">
+<img src="Ms_logo2.png"alt="Navbar-brand-icon"style="width:80px; height:
+50px; margin-left:-12%; font-family:sans-serif;">Maruti suzuki</a> <ul>
+<li class="active"><a href="#"><i class="fa fa-home"></i>Home</a> </li>
+<li class="hover-me"><a href="#"><i class="fa fa-user"></i>About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+<form class="d-flex search" role="search" style="margin-left: 79%;margin-top:- 4%;">
+<input class="form-control me-2" type="search" placeholder="Search" arialabel="Search"> <button
+class="btnbtn-primary" type="submit">Submit</button>
+</form >
+</div>
+</header> <section>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel mt-3"> <div
+class="carousel-indicators">
+
+<button type="button"data-bs-target="#carouselExampleCaptions"data-
+bsslideto="0"class="active"ariacurrent="true"aria-label="Slide 1"></button>
+
+<button type="button"data-bs-target="#carouselExampleCaptions"data-bs-slide-to="1"arialabel="Slide
+2"></button>
+<button type="button"data-bs-target="#carouselExampleCaptions"data-bs-slide-to="2"arialabel="Slide
+3"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="imgrs2004.jpg"class="d-block w-100"alt="hpimage1">
+<div class="carousel-caption d-none d-md-block">
+</div>
+</div>
+<div class="carousel-item">
+<img src="imgrs2006.jpg"class="d-block w-100"alt="hpimage2">
+<div class="carousel-caption d-none d-md-block">
+</div>
+</div>
+<div class="carousel-item">
+<img src="imgrs2007.jpg"class="d-block w-100"alt="hpimage3">
+<div class="carousel-caption d-none d-md-block">
+</div>
+</div>
+</div>
+<button class="carousel-control-prev"type="button"data-bstarget="#carouselExampleCaptions"data-bsslide="prev">
+<span class="carousel-control-prev-icon"aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span> </button>
+<button class="carousel-control-next"type="button"data-bstarget="#carouselExampleCaptions"data-bsslide="next">
+<span class="carousel-control-next-icon"aria-hidden="true"></span>
+
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</section>
+<section>
+<div class="row">
+<div class="col-md-6">
+<form style="background-color:hsl(0, 83%, 39%);;"class="form-group w-100 h-100 p-4">
+<h1 class="text-center">Register Here!</h1>
+<label class="text mb-1">Name:</label> <input
+type="text"class="form-control">
+<label class="text mb-1">Email:</label>
+<input type="email"class="form-control">
+<label class="text mb-1">Address:</label>
+<input type="address"class="form-control">
+<label class="text mb-1">Phone:</label>
+<input type="text"class="form-control">
+<br>
+<label class="text mb-2">Gender:</label>
+<input type="radio"class="form-check-input mx-2"name="gender">Male
+<input type="radio"class="form-check-input mx-2"name="gender">Female
+<br><br>
+<input type="checkbox"class="form-check-input mx-3">Remember me!
+<div class="mt-3">
+<button type="submit"class="btnbtn">Register</button>
+<button type="reset"class="btnbtn-warning">Clear</button>
+</div>
+</form>
+</div>
+<div class="col-md-6 h-80">
+<table class="table">
+<thead style="background-color:hsl(0, 83%, 39%);">
+<tr>
+<th scope="col">S.No</th>
+<th scope="col">Reg.No</th>
+<th scope="col">Name of the customers</th>
+<th scope="col">Models</th>
+<th scopr="col">colour</th>
+<th scope="col">showrooms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td scope="row">1</td>
+<td>maruthi001</td>
+<td>George Imman </td>
+<td>Dezire</td>
+<td>Blue</td>
+<td>Bengaluru</td>
+</tr>
+<tr>
+
+<td scope="row">2</td>
+<td>maruthi002</td>
+<td>John Moses</td>
+<td>Maruthi Ciaz</td>
+<td>Green</td>
+<td>Coimbatore</td>
+</tr>
+<tr>
+<td scope="row">3</td>
+<td>maruthi003</td>
+<td>Jerome Victor</td>
+<td>Maruthi swift</td>
+<td>Red</td>
+<td>Kochi</td>
+</tr>
+<tr>
+<td scope="row">4</td>
+<td>maruthi004</td>
+<td>Jebarson Immanuel</td>
+<td>Maruthi Swift Dezire</td>
+<td>Dark Green</td>
+<td>Mumbai</td>
+</tr>
+<tr>
+<td scope="row">5</td>
+<td>maruthi005</td>
+<td>Jackson</td>
+<td>Maruthi Alto</td>
+<td>Blue</td>
+<td>chennai</td>
+</tr>
+<tr>
+<td scope="row">6</td>
+<td>maruthi006</td>
+<td>Brighton Joshwa</td>
+<td>Maruthi Zen</td>
+<td>Dark Blue</td> <td>Bengaluru</td>
+</tr>
+<tr>
+<td scope="row">7</td>
+<td>maruthi008</td>
+<td>Sam Son</td>
+<td>Maruthi Wagon R</td>
+<td>Yellow</td>
+<td>Coimbatore</td>
+</tr>
+<tr>
+<td scope="row">8</td>
+<td>maruthi008</td>
+<td>Jascar Benish</td>
+<td>Maruthi Breeza</td>
+
+<td>White</td>
+<td>chennai</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</body>
+</html>
